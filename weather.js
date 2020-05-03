@@ -19,8 +19,8 @@ function getWeather(lat,lng){
         }).then(function(json){
             const temperature = json.main.temp;
             const place =json.name;
-            weather.innerText = `${temperature} @ ${place}`
-            console.log(json);
+            weather.innerText = `${temperature}°C @ ${place}`
+            //console.log(json);
         });
 
     // then() : 데이터가 우리한테 '완전히' 넘어왔을 때 함수 한개를 호출

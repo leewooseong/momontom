@@ -52,7 +52,7 @@ function paintToDo(text){
     const delBtn = document.createElement("button");
     const newId = toDos.length + 1;
     const span = document.createElement("span");
-    delBtn.innerText = "❌";
+    delBtn.innerText = "x";
     span.innerText = text
 
     // 삭제를 위한 addEventListener

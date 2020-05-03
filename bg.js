@@ -13,7 +13,7 @@ function paintImage(imgNumber){
     const image = new Image();
     image.src = `images/${imgNumber + 1}.jpg`;
     image.classList.add("bgImage");
-    body.appendChild(image);
+    body.prepend(image);
     // loadEnd???
     // API???(Aplication Programming Interface,응용 프로그램 프로그래밍 인터페이스 )
     // https://medium.com/@dydrlaks/api-%EB%9E%80-c0fd6222d34c

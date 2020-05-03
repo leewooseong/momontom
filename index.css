@@ -6,13 +6,72 @@ block : 요소는 블록 요소 상자를 생성하며, 정상적인 흐름에�
 https://aboooks.tistory.com/85
 */
 /*화면에 표시 x*/
-body{
+body {
     background-color: #353b48;
+    text-align: center;
+    color: white;
 }
+.hc { width:1000px; left:0; right:0; margin-left:auto; margin-right:auto; } /* 가로 중앙 정렬 */ 
+.vc { height:300px; top: 0; bottom:0; margin-top:auto; margin-bottom:auto; } /* 세로 중앙 정렬 */
 
+h1 {
+    font-size: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
 .form,
 .greetings {
     display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.js-toDoList {
+    margin: 0 auto;
+    width: 800px;
+    \font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.js-weather {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+input {
+    width: 200px;
+    height: 25px;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;    
+    background-image: none;
+    color: white;
+}
+input::placeholder{
+    text-align: center;
+    color: gainsboro;
+}
+
+
+button {
+    background-image: none;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+span {
+    text-align: center;
+    color: white;
+}
+li {
+    list-style-type: none;
 }
 /*화면에 표시 o*/
 .showing {
@@ -20,7 +79,7 @@ body{
 }
 
 /*?????*/
-@keyframes fadeIn{
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -33,7 +92,7 @@ body{
 position: 어떻게 위치시킬 것인가 _ static relative absolute fixed
 top, left, right, bottom을 통해 위치 조정, z-index?겹치면 누가 위로 올라갈 것인가
 */
-.bgImage{
+.bgImage {
     position: absolute;
     top: 0;
     left: 0;
