@@ -15,7 +15,7 @@ body {
 .vc { height:300px; top: 0; bottom:0; margin-top:auto; margin-bottom:auto; } /* 세로 중앙 정렬 */
 
 h1 {
-    font-size: 130px;
+    font-size: 170px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin-top: 100px;
@@ -26,23 +26,43 @@ h1 {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 .js-toDoList {
     margin: 0 auto;
     width: 800px;
-    \font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     font-weight: 500;
 }
 .js-weather {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+#input {
+    width: 300px;
+    height: 35px;
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;    
+    border-bottom: transparent;
+    background-image: none;
+    color: white;
+}
 input {
-    width: 200px;
-    height: 25px;
+    font-size: 25px;
+}
+#input::placeholder{
+    font-size: 30px;
+    text-align: center;
+    color: gainsboro;
+}
+#todo {
+    width: 300px;
+    height: 35px;
     background-color: transparent;
     border-top: transparent;
     border-left: transparent;
@@ -50,11 +70,11 @@ input {
     background-image: none;
     color: white;
 }
-input::placeholder{
+#todo::placeholder{
+    font-size: 25px;
     text-align: center;
     color: gainsboro;
 }
-
 
 button {
     background-image: none;
