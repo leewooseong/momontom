@@ -1,0 +1,44 @@
+/*CSS display 기능
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+none : 레이아웃에 영향을 미치지 않도록 요소의 표시를 끔
+block : 요소는 블록 요소 상자를 생성하며, 정상적인 흐름에서 요소 앞과 뒤에 모두 선이 끊어진다.
+밑에 링크가 더 정확히 설명되어 있다.
+https://aboooks.tistory.com/85
+*/
+/*화면에 표시 x*/
+body{
+    background-color: #353b48;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+/*화면에 표시 o*/
+.showing {
+    display: block;
+}
+
+/*?????*/
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+position: 어떻게 위치시킬 것인가 _ static relative absolute fixed
+top, left, right, bottom을 통해 위치 조정, z-index?겹치면 누가 위로 올라갈 것인가
+*/
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
